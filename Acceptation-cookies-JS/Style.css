@@ -1,0 +1,70 @@
+/*-------------------- Pop-up consentement cookies --------------------*/
+
+.cookie_container {
+    z-index: 999;
+    width: 350px;
+    min-height: 20px;
+    box-sizing: border-box;
+    padding: 15px 15px 15px 15px;
+    background: #30a6ff;
+    overflow: hidden;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+}
+
+    /* Titre */
+    .cookie_container .cookie_titre a {
+        font-family: OpenSans, arial, "sans-serif";
+        color: #FFFFFF;
+        font-size: 22px;
+        line-height: 20px;
+        display: block;
+    }
+
+    /* Description */
+    .cookie_container .cookie_description p {
+        margin: 0;
+        padding: 0;
+        font-family: OpenSans, arial, "sans-serif";
+        color: #FFFFFF;
+        font-size: 14px;
+        line-height: 20px;
+        display: block;
+        margin-top: 10px;
+    }
+
+    /* Lien */
+    .cookie_container .cookie_description a {
+        font-family: OpenSans, arial, "sans-serif";
+        color: #FFFFFF;
+        text-decoration: underline;
+    }
+
+    /* Bouton */
+    .cookie_container .cookie_bouton a {
+        display: inline-block;
+        font-family: OpenSans, arial, "sans-serif";
+        color: #30a6ff;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 14px;
+        background: #ffffff;
+        box-sizing: border-box;
+        padding: 10px 30px;
+        text-align: center;
+        transition: background 0.3s;
+    }
+
+        .cookie_container .cookie_bouton a:hover {
+            cursor: pointer;
+        }
+
+@media only screen and (max-width: 768px) {
+    .cookie_container {
+        bottom: 0px !important;
+        left: 0px !important;
+        width: 100% !important;
+    }
+}
